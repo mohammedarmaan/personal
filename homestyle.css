@@ -1,0 +1,39 @@
+body {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.techbox {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: black;
+    padding: 1px;
+    border-radius: 2px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+
+}
+
+.exp {
+    height: auto;
+    width: full;
+    border-radius: 2px;
+    border-bottom: azure solid 1px;
+    /* border-left: azure solid 1px; */
+    margin-top: 10px;
+}
+
+h3, h1 {
+    color: aquamarine;
+}
+
+
+  .collapse-toggle {
+    cursor: pointer;
+  }
+  
+  .collapse-toggle .collapse-icon {
+    transition: transform 0.3s ease;
+  }
+  
+  .collapse-toggle[aria-expanded="true"] .collapse-icon {
+    transform: rotate(180deg);
+  }
