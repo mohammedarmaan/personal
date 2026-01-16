@@ -1,6 +1,6 @@
 body {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
 .techbox {
@@ -20,6 +20,17 @@ body {
     /* border-left: azure solid 1px; */
     margin-top: 10px;
 }
+
+/* .exp-content {
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.exp-content.visible {
+  opacity: 1;
+  visibility: visible;
+} */
 
 h3, h1 {
     color: aquamarine;

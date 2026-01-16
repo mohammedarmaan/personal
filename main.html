@@ -37,35 +37,60 @@
       <div class="container">
         <div class="row g-2">
           <div class="col-8">
-            <div class="border border-secondary h-auto rounded-2 p-2">
-              <h3 class="">About me</h3>
+            <div style="position: relative">
+              <img
+                src="./images/luffyone.png"
+                alt="luffy"
+                style="
+                  width: 100px;
+                  height: 100px;
+                  position: absolute;
+                  top: -75px;
+                  left: 0;
+                "
+              />
 
-              <p class="">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
-                ab minima blanditiis velit ullam commodi laboriosam animi
-                perferendis saepe sequi nemo nisi inventore, quo tempora
-                expedita a aperiam assumenda. Nemo.
-              </p>
-
+              <div class="border border-secondary h-auto rounded-2 p-2">
+                <h3 class="">About me</h3>
+                <p class="">I am a graduate student at Northeastern</p>
+              </div>
             </div>
-            
+
             <div class="border border-secondary h-auto rounded-2 p-3 mt-2">
               <h3>Work experience</h3>
 
               <!-- Experience 1 -->
               <div class="exp">
-                <div class="row">
+                <div
+                  class="row exp-trigger"
+                  data-target="exp1"
+                  style="cursor: pointer"
+                >
                   <div class="col">
                     <h4>antimattr</h4>
-                    <h6>Front-end development Intern</h6>
+                    <p class="mb-2">Front-end development Intern</p>
                   </div>
-                  <div class="col text-end">
+                  <div class="col-auto text-end">
                     <small>Jun 2025 – Jul 2025</small><br />
                     <small>Bangalore, India</small>
                   </div>
                 </div>
-                <div >
-                <ul>
+
+                <ul
+                  id="exp1"
+                  class="exp-content"
+                  style="
+                    display: none;
+                    opacity: 0;
+                    transition: opacity 0.3s ease;
+                    position: absolute;
+                    z-index: 50;
+                    background-color: coral;
+                    color: white;
+                    border: aquamarine solid 1px;
+                    width: 600px;
+                  "
+                >
                   <li>
                     Developed responsive frontend features for DIA (Digital
                     Intelligent Assistant) using Next.js and TypeScript,
@@ -78,14 +103,17 @@
                     responsive design across devices
                   </li>
                 </ul>
-                </div>  
               </div>
 
               <!-- Experience 2 -->
               <div class="exp">
-                <div class="row">
+                <div
+                  class="row exp-trigger"
+                  data-target="exp2"
+                  style="cursor: pointer"
+                >
                   <div class="col">
-                    <h4>Freelance (Upwork)</h4>
+                    <h4 class="mb-0">Freelance (Upwork)</h4>
                     <h6>Front-end development</h6>
                   </div>
                   <div class="col text-end">
@@ -93,7 +121,21 @@
                     <small>Remote</small>
                   </div>
                 </div>
-                <ul>
+                <ul
+                  id="exp2"
+                  class="exp-content"
+                  style="
+                    display: none;
+                    opacity: 0;
+                    transition: opacity 0.3s ease;
+                    position: absolute;
+                    z-index: 50;
+                    background-color: black;
+                    color: white;
+                    border: aquamarine solid 1px;
+                    width: 600px;
+                  "
+                >
                   <li>
                     Delivered 6 production-ready website frontends using React
                     and Remix within a 4-week timeline, maintaining 100% on-time
@@ -104,18 +146,36 @@
 
               <!-- Experience 3 -->
               <div class="exp">
-                <div class="row">
+                <div
+                  class="row exp-trigger"
+                  data-target="exp3"
+                  style="cursor: pointer"
+                >
                   <div class="col">
                     <h4>Grid R&D</h4>
                     <h6>Full-stack developer intern</h6>
-                    <small class="text-muted">Tasklearn.ai</small>
+                    <small>Tasklearn.ai</small>
                   </div>
                   <div class="col text-end">
                     <small>Feb 2025 – May 2025</small><br />
                     <small>Bangalore, India</small>
                   </div>
                 </div>
-                <ul>
+                <ul
+                  id="exp3"
+                  class="exp-content"
+                  style="
+                    display: none;
+                    opacity: 0;
+                    transition: opacity 0.3s ease;
+                    position: absolute;
+                    z-index: 50;
+                    background-color: black;
+                    color: white;
+                    border: aquamarine solid 1px;
+                    width: 600px;
+                  "
+                >
                   <li>
                     Built 15+ React.js components with Redux state management,
                     reducing page load time by 25%
@@ -133,7 +193,11 @@
 
               <!-- Experience 4 -->
               <div class="exp">
-                <div class="row">
+                <div
+                  class="row exp-trigger"
+                  data-target="exp4"
+                  style="cursor: pointer"
+                >
                   <div class="col">
                     <h4>Visume.ai</h4>
                   </div>
@@ -141,7 +205,21 @@
                     <small>Aug 2024 – Oct 2024</small>
                   </div>
                 </div>
-                <ul>
+                <ul
+                  id="exp4"
+                  class="exp-content"
+                  style="
+                    display: none;
+                    opacity: 0;
+                    transition: opacity 0.3s ease;
+                    position: absolute;
+                    z-index: 50;
+                    background-color: black;
+                    color: white;
+                    border: aquamarine solid 1px;
+                    width: 600px;
+                  "
+                >
                   <li>Built a responsive UI in React.js + Tailwind CSS</li>
                   <li>
                     Refactored REST endpoints, reducing average API response
@@ -150,7 +228,15 @@
                 </ul>
               </div>
             </div>
+
+            <div>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+              tempore sapiente nostrum sint minima, ducimus adipisci praesentium
+              error possimus totam officia sequi mollitia quidem. Vitae nam
+              dolores delectus omnis perferendis!
+            </div>
           </div>
+
           <div class="col-4">
             <div class="border border-secondary h-auto rounded-2 p-2">
               <h3>Contact Me</h3>
@@ -192,7 +278,7 @@
                 </li>
               </ul>
             </div>
-            <div class="border border-secondary h-auto rounded-2 p-2">
+            <div class="border border-secondary h-auto rounded-2 p-2 mt-2">
               <h3>Tech Stack</h3>
               <div>
                 <span class="techbox">JavaScript</span>
@@ -211,9 +297,16 @@
                 <span class="techbox">Postman</span>
               </div>
             </div>
+            <div class="border border-secondary h-auto rounded-2 p-2 mt-2">
+              <h3>Education</h3>
+              <div>MSCS @ Northeaster University</div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- my js file -->
+    <script src="./script.js"></script>
   </body>
 </html>
