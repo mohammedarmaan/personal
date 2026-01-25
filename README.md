@@ -1,1 +1,155 @@
-This is the README
+# Mohammed Armaan - Personal Homepage
+
+A modern, responsive personal portfolio website showcasing my journey as a graduate student and full-stack developer. Built with vanilla HTML, CSS, and JavaScript with a sleek dark theme and interactive elements.
+
+![Portfolio Screenshot](./images/screenshot.png)
+<!-- Replace with an actual screenshot or GIF of your site -->
+
+##  Project Objective
+
+This project serves as my personal homepage and portfolio to:
+- Showcase my work experience, projects, and technical skills
+- Provide a central hub for professional connections (GitHub, LinkedIn, Email)
+- Express my personality through design choices and interactive elements
+- Demonstrate frontend development capabilities with pure HTML/CSS/JS
+
+## Features
+
+- **Dark Theme Design** - Sleek black background with aquamarine accents
+- **Interactive Experience Cards** - Hover to reveal job details with smooth animations
+- **Tech Stack Showcase** - Hover over technologies to see their logos
+- **News Ticker** - Auto-scrolling ticker with fun personal facts
+- **Twinkling Links** - Random highlight effect on navigation links
+- **Project Cards** - Expandable cards showing tech tags on hover
+- **About Me Page** - Minecraft-themed secondary page with personal interests
+- **Fully Responsive** - Works on desktop, tablet, and mobile devices
+
+##  Screenshots
+
+| Home Page | About Page |
+|-----------|------------|
+| ![Home](./images/home-screenshot.png) | ![About](./images/about-screenshot.png) |
+
+<!-- Replace with actual screenshots -->
+
+##  Tech Requirements
+
+- **HTML5** - Semantic markup structure
+- **CSS3** - Custom styling with CSS variables, flexbox, grid
+- **JavaScript (ES6+)** - DOM manipulation, event handling, animations
+- **Bootstrap 5.3.8** - Grid system and utility classes
+- **Font Awesome 6.4.0** - Icons
+- **Google Fonts** - Cascadia Mono, VT323 (for Minecraft theme)
+
+##  Project Structure
+
+```
+personal-homepage/
+├── index.html              # Main homepage
+├── pages/
+│   ├── aboutme.html        # About me page
+│   └── album.html          # Photo album page
+├── styles/
+│   ├── homestyle.css       # Main page styles
+│   └── aboutstyle.css      # About page styles
+├── js/
+│   └── script.js           # Interactive functionality
+├── images/
+│   ├── photo.png           # Profile photo
+│   ├── luffyone.png        # Luffy decoration
+│   ├── mangapanel.png      # One Piece panel
+│   ├── minecraftbg.png     # About page background
+│   ├── favicon.ico         # Site favicon
+│   └── [tech logos]        # Technology icons
+└── README.md
+```
+
+##  How to Install / Use
+
+### Option 1: Clone and Open
+```bash
+# Clone the repository
+git clone https://github.com/mohammedarmaan/personal-homepage.git
+
+# Navigate to the project directory
+cd personal-homepage
+
+# Open in browser
+open index.html
+# or simply double-click index.html
+```
+
+### Option 2: Live Server (Recommended for Development)
+```bash
+# If you have VS Code with Live Server extension
+# Right-click index.html → "Open with Live Server"
+
+# Or using npm
+npx serve .
+```
+
+### Option 3: View Live
+Visit the deployed site: [mohammedarmaan.github.io](https://mohammedarmaan.github.io)
+<!-- Update with your actual deployed URL -->
+
+##  Customization
+
+To customize for your own use:
+
+1. Update personal information in `index.html`
+2. Replace images in the `/images` folder
+3. Modify color scheme by editing CSS variables in `homestyle.css`:
+   ```css
+   /* Change aquamarine to your preferred accent color */
+   color: aquamarine;
+   ```
+4. Update social links in the Contact section
+
+##  Author
+
+**Mohammed Armaan**  
+Graduate Student @ Northeastern University | Full-Stack Developer
+
+- 🌐 Homepage: [mohammedarmaan.github.io](https://mohammedarmaan.github.io)
+- 💼 LinkedIn: [linkedin.com/in/mohammedarmaan](https://linkedin.com/in/mohammedarmaan)
+- 🐙 GitHub: [github.com/mohammedarmaan](https://github.com/mohammedarmaan)
+- 📧 Email: armaan0243@gmail.com
+
+## 📚 Class Reference
+
+This project was created as part of **CS 5610 - Web Development** at Northeastern University.
+
+Course Link: [CS 5610 Web Development](https://johnguerra.co/classes/webDevelopment_fall_2024/)
+<!-- Update with your actual class link if different -->
+
+##  Video Demonstration
+
+[Watch the demo video](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+<!-- Replace with actual video link -->
+
+##  GenAI Tools Usage
+
+This project utilized AI assistance in the following ways:
+
+| Tool | Version | Usage |
+|------|---------|-------|
+| Claude | Claude Opus 4.5 | README generation, code review suggestions |
+
+**Prompts Used:**
+- "Generate a README following these guidelines: [image of requirements]"
+- Provided full HTML, CSS, and JS code for context
+
+**How AI Assisted:**
+- Generated this README.md file structure and content
+- Helped ensure all required sections were included per class guidelines
+- Did NOT generate the core website HTML/CSS/JS code
+
+##  License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+<p align="center">
+  Made with ☕ and 💻 in Boston, MA
+</p>
