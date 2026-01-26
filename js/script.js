@@ -41,15 +41,27 @@ setInterval(() => {
   }, 1500);
 }, 2500);
 
-const ticker = document.querySelector(".news-ticker");
+// ticker animation 
+
+const tickerElement = document.querySelector(".ticker");
+const containerWidth = document.querySelector(".ticker-container").offsetWidth;
+
+// Clone all items and append to create seamless loop
+const items = tickerElement.querySelectorAll(".ticker-item");
+items.forEach(item => {
+  const clone = item.cloneNode(true);
+  tickerElement.appendChild(clone);
+});
+
 let scrollPos = 0;
 
 function autoScroll() {
-  scrollPos -= 2;
-  ticker.style.transform = `translateX(${scrollPos}px)`;
+  scrollPos -= 1;
+  tickerElement.style.transform = `translateX(${scrollPos}px)`;
 
-  if (scrollPos < -ticker.scrollWidth) {
-    scrollPos = window.innerWidth;
+  // Reset to start when halfway through (seamless loop)
+  if (Math.abs(scrollPos) >= tickerElement.scrollWidth / 2) {
+    scrollPos = 0;
   }
 
   requestAnimationFrame(autoScroll);

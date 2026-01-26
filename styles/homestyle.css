@@ -14,6 +14,19 @@ body {
 p {
   line-height: 1.1;
 }
+h2 {
+  font-size: 1.2rem;  /* matches your current h5 size */
+  font-weight: 600;
+   color: aquamarine;
+  /* add any other h5 styles you have */
+}
+
+h3{
+  font-size: 1rem;  /* matches your current h6 size */
+  font-weight: 500;
+  margin: 0;
+  /* add any other h6 styles you have */
+}
 
 /* Typography */
 h1,
@@ -104,19 +117,18 @@ h5 {
 
 /* ticker part */
 
-.news-container {
+.ticker-container {
   width: 100%;
   overflow: hidden;
 }
 
-.news-ticker {
+.ticker {
   display: flex;
   gap: 50px;
-  animation: scroll 30s linear infinite;
   white-space: nowrap;
 }
 
-.news-item {
+.ticker-item {
   color: white;
   font-size: 16px;
   flex-shrink: 0;
