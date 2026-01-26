@@ -52,6 +52,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link rel="stylesheet" href="./styles/homestyle.css" />
+    <link rel="stylesheet" href="./styles/memorygamestyle.css" />
   </head>
 
   <body>
@@ -68,11 +69,12 @@
             <!-- About -->
             <div class="card-section position-relative">
               <img src="./images/luffyone.png" alt="luffy" class="luffy-img" />
-              <!-- <h2>About me</h2> -->
+
               <p class="about-text">
                 I'm a graduate student at Northeastern University. I like
                 building web apps and turning data into insights.
               </p>
+              <a href="./pages/aboutme.html">about me</a>
             </div>
 
             <!-- Work Experience -->
@@ -360,6 +362,46 @@
                 style="width: 100%; height: auto; margin-top: -10px"
               />
             </div>
+
+            <!-- Memory Game -->
+            <div class="memory-game-container">
+              <h2 class="memory-game-title">Try My Memory Game!</h2>
+
+              <div class="memory-stats">
+                <div class="memory-stat">
+                  <div class="memory-stat-label">Moves</div>
+                  <div class="memory-stat-value" id="memoryMoves">0</div>
+                </div>
+                <div class="memory-stat">
+                  <div class="memory-stat-label">Matched</div>
+                  <div class="memory-stat-value" id="memoryMatched">0/8</div>
+                </div>
+              </div>
+
+              <div class="memory-game-grid" id="memoryGameGrid"></div>
+
+              <button
+                class="memory-game-btn"
+                onclick="window.memoryGameModule.resetMemoryGame()"
+              >
+                New Game
+              </button>
+            </div>
+
+            <!-- Win Modal -->
+            <div class="memory-modal" id="memoryWinModal">
+              <div class="memory-modal-content">
+                <h2>You Won!</h2>
+                <div class="memory-final-moves" id="memoryFinalMoves">0</div>
+                <p id="memoryFinalText">moves</p>
+                <button
+                  class="memory-game-btn"
+                  onclick="window.memoryGameModule.resetMemoryGame()"
+                >
+                  Yay!
+                </button>
+              </div>
+            </div>
           </div>
 
           <!-- Right Column -->
@@ -498,6 +540,22 @@
 
     <footer>© 2025 Mohammed Armaan</footer>
 
-    <script type="module" src="./js/script.js"></script>
+    <script type="module">
+      import { initMemoryGame, resetMemoryGame } from "./js/memorygame.js";
+
+      // Export functions to window for onclick handlers
+      window.memoryGameModule = {
+        initMemoryGame,
+        resetMemoryGame,
+      };
+
+      // Initialize memory game when page loads
+      window.addEventListener("load", () => {
+        initMemoryGame();
+      });
+
+      // Load main script
+      import("./js/script.js");
+    </script>
   </body>
 </html>
