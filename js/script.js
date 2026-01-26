@@ -41,14 +41,14 @@ setInterval(() => {
   }, 1500);
 }, 2500);
 
-// ticker animation 
+// ticker animation
 
 const tickerElement = document.querySelector(".ticker");
 const containerWidth = document.querySelector(".ticker-container").offsetWidth;
 
 // Clone all items and append to create seamless loop
 const items = tickerElement.querySelectorAll(".ticker-item");
-items.forEach(item => {
+items.forEach((item) => {
   const clone = item.cloneNode(true);
   tickerElement.appendChild(clone);
 });

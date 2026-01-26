@@ -42,9 +42,11 @@
 
 .memory-game-grid {
     display: grid;
-    grid-template-columns: repeat(4, 60px); /* FIXED size */
+    grid-template-columns: repeat(4, 60px);
+    /* FIXED size */
     gap: 8px;
-    justify-content: center; /* center grid */
+    justify-content: center;
+    /* center grid */
     margin-bottom: 10px;
 }
 
