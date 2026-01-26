@@ -6,7 +6,10 @@
 
     <!-- Opengraph -->
     <meta property="og:title" content="Mohammed Armaan's Personal home page" />
-    <meta property="og:description" content="Welcome to my personal portfolio. Explore my projects, skills, and journey as a developer." />
+    <meta
+      property="og:description"
+      content="Welcome to my personal portfolio. Explore my projects, skills, and journey as a developer."
+    />
     <meta property="og:image" content="./images/photo.png" />
     <meta property="og:url" content="armaaaaan" />
     <meta property="og:type" content="website" />
@@ -15,13 +18,10 @@
     <meta property="article:author" content="Mohammed Armaan" />
 
     <!-- description -->
-    <meta
-      name="description"
-      content="Mohammed Armaan - Personal home page"
-    />
+    <meta name="description" content="Mohammed Armaan - Personal home page" />
 
-    <!-- icon -->
-     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <!-- site icon -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
 
     <title>Mohammed Armaan - Personal Page</title>
 
@@ -45,6 +45,8 @@
       href="https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Font Awesome link -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -66,7 +68,7 @@
             <!-- About -->
             <div class="card-section position-relative">
               <img src="./images/luffyone.png" alt="luffy" class="luffy-img" />
-              <!-- <h4>About me</h4> -->
+              <!-- <h5>About me</h5> -->
               <p class="about-text">
                 I'm a graduate student at Northeastern University. I like
                 building web apps and turning data into insights.
@@ -75,13 +77,13 @@
 
             <!-- Work Experience -->
             <div class="card-section">
-              <h4>Work experience</h4>
+              <h5>Work experience</h5>
 
               <!-- Experience 1 -->
               <div class="exp">
                 <div class="row exp-trigger" data-target="exp1">
                   <div class="col">
-                    <h6 class="exp-title">antimattr</h6>
+                    <h6 class="exp-title">antimattr</h5>
                     <small class="exp-role">Front-end Development Intern</small>
                   </div>
                   <div class="col-auto text-end">
@@ -173,7 +175,10 @@
             </div>
             <div class="news-container">
               <div class="news-ticker">
-                <span class="news-item">I am in Boston, MA!!</span>
+                <span class="news-item"
+                  ><i style="color: red" class="fa-solid fa-location-dot"></i>
+                  Boston, MA!!</span
+                >
                 <span class="news-item">I love One Piece</span>
                 <span class="news-item">Books read in 2026: 3</span>
                 <span class="news-item">Messi FAN!! </span>
@@ -183,11 +188,17 @@
 
             <!-- Projects -->
             <div class="card-section">
-              <h4>Projects</h4>
+              <h5>Projects</h5>
               <div class="row g-2 mt-1">
                 <div class="project-card">
                   <div style="display: flex; align-items: center; gap: 10px">
-                    <h6 class="project-title" style="margin: 0">Smartprep</h6>
+                    <a
+                      href="https://majorproject02.vercel.app/"
+                      target="_blank"
+                      style="text-decoration: none; color: inherit"
+                    >
+                      <h6 class="project-title" style="margin: 0">Smartprep</h6>
+                    </a>
                     <div
                       class="project-tag-group"
                       style="visibility: hidden; display: flex; gap: 10px"
@@ -204,7 +215,10 @@
                       AI learning platform with RAG architecture for document
                       Q&A.
                     </p>
-                    <a href="your-project-link" target="_blank">
+                    <a
+                      href="https://majorproject02.vercel.app/"
+                      target="_blank"
+                    >
                       <i class="fa fa-external-link fa-xs"></i>
                     </a>
                   </div>
@@ -212,9 +226,16 @@
 
                 <div class="project-card">
                   <div style="display: flex; align-items: center; gap: 10px">
-                    <h6 class="project-title" style="margin: 0">
-                      Data Quality Checker
-                    </h6>
+                    <a
+                      href="https://data-quality-checker02.streamlit.app/"
+                      target="_blank"
+                      style="text-decoration: none; color: inherit"
+                    >
+                      <h6 class="project-title" style="margin: 0">
+                        Data Quality Checker
+                      </h6>
+                    </a>
+
                     <div
                       class="project-tag-group"
                       style="visibility: hidden; display: flex; gap: 10px"
@@ -283,7 +304,10 @@
                       Web scraper and ETL pipeline to transform unstructured
                       data into CSV.
                     </p>
-                    <a href="your-project-link" target="_blank">
+                    <a
+                      href="https://github.com/mohammedarmaan/webscraping"
+                      target="_blank"
+                    >
                       <i class="fa fa-external-link fa-xs"></i>
                     </a>
                   </div>
@@ -300,7 +324,7 @@
 
             <!-- Interests -->
             <div class="card-section">
-              <h4>When I'm not coding</h4>
+              <h5>When I'm not coding</h5>
               <div class="mt-2">
                 <span class="hobby-pill">⚽ Football</span>
                 <span class="hobby-pill">📺 Anime</span>
@@ -316,7 +340,7 @@
           <div class="col-4">
             <!-- Contact -->
             <div class="card-section position-relative">
-              <h4>Ummmm..</h4>
+              <h5>Ummmm..</h5>
               <ul class="list-unstyled mb-0">
                 <li>
                   <a href="./pages/album.html" target="_blank" class="alink"
@@ -338,12 +362,13 @@
                   <a href="#" class="alink">Resume</a>
                 </li>
               </ul>
-              <img id="techImage" src="" alt="popup-image" class="tech-image" />
+              <!-- cannot let the src be empty -->
+              <img id="techImage" src="#" alt="popup-image" class="tech-image" />
             </div>
 
             <!-- Tech Stack -->
             <div class="card-section">
-              <h4>Tech Stack</h4>
+              <h5>Tech Stack</h5>
               <div class="mt-2">
                 <span class="techbox" data-image="./images/javascript.png"
                   >JavaScript</span
@@ -378,7 +403,7 @@
 
             <!-- Education -->
             <div class="card-section">
-              <h4>Education</h4>
+              <h5>Education</h5>
               <div class="edu-content">
                 <strong>M.S. Computer Science</strong><br />
                 <span class="edu-school">Northeastern University</span><br />
@@ -388,7 +413,7 @@
 
             <!-- Contact -->
             <div class="card-section position-relative">
-              <h4>Contact</h4>
+              <h5>Contact</h5>
               <ul class="list-unstyled mb-0">
                 <li class="text-decoration-underline">
                   <a href="mailto:armaan0243@gmail.com">Email</a>
