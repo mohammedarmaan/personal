@@ -2,7 +2,7 @@
 
 A modern, responsive personal portfolio website showcasing my journey as a graduate student and full-stack developer. Built with vanilla HTML, CSS, and JavaScript with a sleek dark theme and interactive elements.
 
-![Portfolio Screenshot](./images/screenshot.png)
+![Portfolio Screenshot](./images/thumbnail.png)
 <!-- Replace with an actual screenshot or GIF of your site -->
 
 ##  Project Objective
@@ -22,6 +22,8 @@ This project serves as my personal homepage and portfolio to:
 - **Twinkling Links** - Random highlight effect on navigation links
 - **Project Cards** - Expandable cards showing tech tags on hover
 - **About Me Page** - Minecraft-themed secondary page with personal interests
+- **Memory Game** - Interactive memory matching game
+- **Photo Album** - Personal photo gallery page
 - **Fully Responsive** - Works on desktop, tablet, and mobile devices
 
 ##  Screenshots
@@ -44,35 +46,48 @@ This project serves as my personal homepage and portfolio to:
 ##  Project Structure
 
 ```
-personal-homepage/
-├── index.html              # Main homepage
-├── pages/
-│   ├── aboutme.html        # About me page
-│   └── album.html          # Photo album page
-├── styles/
-│   ├── homestyle.css       # Main page styles
-│   └── aboutstyle.css      # About page styles
-├── js/
-│   └── script.js           # Interactive functionality
+personal/
+├── index.html                  # Main homepage
+├── package.json                # Project configuration
+├── Design_document.pdf         # Design documentation
+├── README.md                   # Project documentation
 ├── images/
-│   ├── photo.png           # Profile photo
-│   ├── luffyone.png        # Luffy decoration
-│   ├── mangapanel.png      # One Piece panel
-│   ├── minecraftbg.png     # About page background
-│   ├── favicon.ico         # Site favicon
-│   └── [tech logos]        # Technology icons
-└── README.md
+│   ├── Boston/                 # Boston-related images
+│   ├── favicon.ico             # Site favicon
+│   ├── luffyone.png            # Luffy decoration
+│   ├── luffyopengraph.png      # Open Graph image
+│   ├── mangapanel.png          # One Piece panel
+│   ├── minecraftbg.jpg         # Minecraft background (JPG)
+│   ├── minecraftbg.png         # Minecraft background (PNG)
+│   ├── photo.png               # Profile photo
+│   ├── python.png              # Python logo
+│   └── thumbnail.png           # Thumbnail image
+├── js/
+│   ├── memorygame.js           # Memory game functionality
+│   └── script.js               # Main interactive functionality
+├── pages/
+│   ├── aboutme.html            # About me page
+│   └── album.html              # Photo album page
+└── styles/
+    ├── aboutstyle.css          # About page styles
+    ├── albumstyle.css          # Album page styles
+    ├── homestyle.css           # Main page styles
+    └── memorygamestyle.css     # Memory game styles
 ```
+
+##  Design Document
+
+View the design document for this project: [Design_document.pdf](https://github.com/mohammedarmaan/personal/blob/main/Design_document.pdf)
 
 ##  How to Install / Use
 
 ### Option 1: Clone and Open
 ```bash
 # Clone the repository
-git clone https://github.com/mohammedarmaan/personal-homepage.git
+git clone https://github.com/mohammedarmaan/personal.git
 
 # Navigate to the project directory
-cd personal-homepage
+cd personal
 
 # Open in browser
 open index.html
