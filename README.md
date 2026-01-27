@@ -119,12 +119,12 @@ Graduate Student @ Northeastern University | Full-Stack Developer
 This project was created as part of **CS 5610 - Web Development** at Northeastern University.
 
 Course Link: [CS 5610 Web Development](https://johnguerra.co/classes/webDevelopment_fall_2024/)
-<!-- Update with your actual class link if different -->
+
 
 ##  Video Demonstration
 
-[Watch the demo video](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
-<!-- Replace with actual video link -->
+[Watch the demo video](https://drive.google.com/file/d/11zi0ScgBks3CZSXo0gqaMhXKdszFaTNA/view?usp=sharing)
+
 
 ##  GenAI Tools Usage
 
@@ -136,12 +136,10 @@ This project utilized AI assistance in the following ways:
 
 **Prompts Used:**
 - "Generate a README following these guidelines: [image of requirements]"
-- Provided full HTML, CSS, and JS code for context
 
 **How AI Assisted:**
 - Generated this README.md file structure and content
 - Helped ensure all required sections were included per class guidelines
-- Did NOT generate the core website HTML/CSS/JS code
 
 ##  License
 
