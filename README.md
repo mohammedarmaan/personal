@@ -30,7 +30,7 @@ This project serves as my personal homepage and portfolio to:
 
 | Home Page | About Page |
 |-----------|------------|
-| ![Home](./images/home-screenshot.png) | ![About](./images/about-screenshot.png) |
+| ![Home](./images/thumbnail.png) | ![About](./images/aboutme.png) |
 
 <!-- Replace with actual screenshots -->
 
