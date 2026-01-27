@@ -97,15 +97,10 @@ open index.html
 ### Option 2: Live Server (Recommended for Development)
 ```bash
 # If you have VS Code with Live Server extension
-# Right-click index.html → "Open with Live Server"
 
-# Or using npm
-npx serve .
+# Or using python
+python -m http.server 8000 .
 ```
-
-### Option 3: View Live
-Visit the deployed site: [mohammedarmaan.github.io/personal](https://mohammedarmaan.github.io/personal/)
-<!-- Update with your actual deployed URL -->
 
 ##  Customization
 
