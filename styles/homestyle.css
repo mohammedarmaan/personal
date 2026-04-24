@@ -92,6 +92,20 @@ h5 {
   margin-bottom: 0;
 }
 
+.exp-link {
+  color: #a855f7;
+  font-size: 0.75em;
+  vertical-align: middle;
+  text-decoration: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.exp-link:hover {
+  opacity: 1;
+  color: #a855f7;
+}
+
 .exp-role {
   color: #888;
 }
